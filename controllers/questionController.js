@@ -1,6 +1,5 @@
-const express = require("express");
-const router = express.Router();
 const QuestionModel = require("../models/Question");
+// import QuestionModel from "../models/Question";
 
 class questionController {
   // router.post("/questions",
@@ -127,4 +126,4 @@ class questionController {
   };
 }
 
-export default questionController;
+module.exports = questionController;

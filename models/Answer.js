@@ -28,4 +28,4 @@ const answerSchema = new mongoose.Schema(
 
 const AnswerModel = mongoose.model("Answers", answerSchema);
 
-export default AnswerModel;
+module.exports = AnswerModel;

@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
 
+// import mongoose from "mongoose";
+
 const questionSchema = new mongoose.Schema(
   {
     title: {

@@ -1,5 +1,6 @@
-const express = require("express");
-const router = express.Router();
+// const express = require("express");
+// const router = express.Router();
+// const VoteModel = require("../models/Vote");
 const VoteModel = require("../models/Vote");
 
 class VoteController {
@@ -37,4 +38,4 @@ class VoteController {
 
 // Define the route using the controller method
 
-export default VoteController;
+module.exports = VoteController;

@@ -1,7 +1,7 @@
-import UserModel from "../models/User.js";
-import bcrypt from "bcrypt";
-import jwt from "jsonwebtoken";
-import transporter from "../config/emailConfig.js";
+const UserModel = require("../models/User.js");
+const bcrypt = require("bcrypt");
+const jwt = require("jsonwebtoken");
+// import transporter from "../config/emailConfig.js";
 
 class UserController {
   static userRegistration = async (req, res) => {
@@ -114,39 +114,6 @@ class UserController {
     res.send({ user: req.user });
   };
 
-  static sendUserPasswordResetEmail = async (req, res) => {
-    const { email } = req.body;
-    if (email) {
-      const user = await UserModel.findOne({ email: email });
-      if (user) {
-        const secret = (await user._id) + process.env.JWT_SECRET_KEY;
-        const token = jwt.sign({ userID: user._id }, secret, {
-          expiresIn: "15m",
-        });
-        const link = `http://localhost:3000/api/user/reset/${user._id}/${token}`;
-        console.log(link);
-
-        // send email
-        let info = await transporter.sendMail({
-          from: process.env.EMAIL_FROM,
-          to: user.email,
-          subject: "PASSWORD RESET LINK",
-          html: `<a href=${link}>Click here to reset your password</a>`,
-        });
-
-        res.send({
-          status: "success",
-          message: "Password reset Email sent... Please check your Email",
-          info: info,
-        });
-      } else {
-        res.send({ status: "failed", message: "Email does not exist!" });
-      }
-    } else {
-      res.send({ status: "failed", message: "Email field is required" });
-    }
-  };
-
   static userPasswordReset = async (req, res) => {
     const { password, password_confirmation } = req.body;
     const { id, token } = req.params;
@@ -180,4 +147,4 @@ class UserController {
   };
 }
 
-export default UserController;
+module.exports = UserController;

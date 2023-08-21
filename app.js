@@ -1,10 +1,11 @@
-import dotenv from "dotenv";
+const dotenv = require("dotenv");
 dotenv.config();
-import express from "express";
-import cors from "cors";
-import connectDB from "./config/connectdb.js";
-import userRoutes from "./routes/userRoutes.js";
-import questionRoutes from "./routes/questionroutes.js";
+const express = require("express");
+const cors = require("cors");
+const connectDB = require("./config/connectdb.js");
+// import userRoutes from "./routes/userRoutes.js";
+// import questionRoutes from "./routes/questionroutes.js";
+const router = require("./routes");
 
 const app = express();
 const port = process.env.PORT || 80;
@@ -20,8 +21,10 @@ connectDB(DATABASE_URL);
 app.use(express.json());
 
 //load route
-app.use("/api/user", userRoutes);
-app.use("/api/question", questionRoutes);
+// app.use("/api/user", userRoutes);
+// app.use("/api/question", questionRoutes);
+
+app.use("/api", router);
 
 app.get("/", (req, res) => {
   res.json({ message: "Hello World!" });
