@@ -4,6 +4,7 @@ import express from "express";
 import cors from "cors";
 import connectDB from "./config/connectdb.js";
 import userRoutes from "./routes/userRoutes.js";
+import questionRoutes from "./routes/questionroutes.js";
 
 const app = express();
 const port = process.env.PORT || 80;
@@ -20,6 +21,8 @@ app.use(express.json());
 
 //load route
 app.use("/api/user", userRoutes);
+app.use("/api/question", questionRoutes);
+
 app.get("/", (req, res) => {
   res.json({ message: "Hello World!" });
 });

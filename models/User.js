@@ -18,20 +18,12 @@ const userSchema = new mongoose.Schema(
       required: true,
       trim: true,
     },
-    tc: {
-      type: Boolean,
-      required: true,
-    },
-    tc: {
-      type: Boolean,
-      required: true,
-    },
   },
   {
     timestamps: true,
   }
 );
 
-const UserModel = mongoose.model("user", userSchema);
+const UserModel = mongoose.model("User", userSchema);
 
 export default UserModel;
