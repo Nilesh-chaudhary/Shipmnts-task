@@ -30,10 +30,10 @@ app.get("/", (req, res) => {
   res.json({ message: "Hello World!" });
 });
 
-app.listen(port);
-// app.listen(port, () => {
-//   console.log(`server listening at http://localhost:${port}`);
-// });
+// app.listen(port);
+app.listen(port, () => {
+  console.log(`server listening at http://localhost:${port}`);
+});
 // https://shipmnts-task.azurewebsites.net/
 
 // delete emailconfig

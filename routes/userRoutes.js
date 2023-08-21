@@ -8,12 +8,8 @@ router.use("/changepassword", checkUserAuth);
 router.use("/loggeduser", checkUserAuth);
 
 // PUBLIC ROUTE
-router.post("/register", function (req, res) {
-  UserController.userRegistration;
-});
-router.post("/login", function (req, res) {
-  UserController.userLogin;
-});
+router.post("/register", UserController.userRegistration);
+router.post("/login", UserController.userLogin);
 // router.post("/send-reset-password-email", function (req, res) {
 //   UserController.sendUserPasswordResetEmail;
 // });
