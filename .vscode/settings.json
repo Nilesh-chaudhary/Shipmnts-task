@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/8803d0ee-3368-4e8b-8261-b186e284dd5e/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/shipmnts-task",
+    "appService.deploySubpath": "."
+}
