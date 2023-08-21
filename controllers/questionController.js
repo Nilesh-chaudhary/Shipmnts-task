@@ -20,9 +20,7 @@ class questionController {
         .status(201)
         .json({ message: "Question created successfully", question });
     } catch (error) {
-      res
-        .status(500)
-        .json({ error: "An error occurred while creating the question" });
+      res.status(500).json({ error });
     }
   };
 
@@ -30,6 +28,7 @@ class questionController {
   static updatequestion = async (req, res) => {
     try {
       const questionId = req.params.id;
+      console.log(questionId);
       const { title, body, tags } = req.body;
 
       const question = await QuestionModel.findByIdAndUpdate(

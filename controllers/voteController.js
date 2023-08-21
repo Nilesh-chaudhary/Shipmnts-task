@@ -7,7 +7,7 @@ class VoteController {
   static voteupdate = async (req, res) => {
     try {
       const questionId = req.params.id;
-      const userId = req.body.userId; // The ID of the user casting the vote
+      const userId = req.body.user; // The ID of the user casting the vote
       const voteType = req.body.voteType; // "upvote" or "downvote"
 
       const existingVote = await VoteModel.findOne({
@@ -27,11 +27,11 @@ class VoteController {
         await vote.save();
       }
 
-      res.json({ message: "Vote recorded successfully" });
+      res.json({
+        message: "vote recorded successfully",
+      });
     } catch (error) {
-      res
-        .status(500)
-        .json({ error: "An error occurred while recording the vote" });
+      res.status(500).json({ error });
     }
   };
 }

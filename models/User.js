@@ -17,10 +17,10 @@ const userSchema = new mongoose.Schema({
     required: true,
     trim: true,
   },
-  tc: {
-    type: Boolean,
-    required: true,
-  },
+  // tc: {
+  //   type: Boolean,
+  //   required: true,
+  // },
 });
 
 const UserModel = mongoose.model("User", userSchema);

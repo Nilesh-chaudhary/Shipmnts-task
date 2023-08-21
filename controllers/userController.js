@@ -34,7 +34,11 @@ class UserController {
               token: token,
             });
           } catch (error) {
-            res.send({ status: "failed", message: "unable to register" });
+            res.send({
+              status: "failed",
+              message: "unable to register",
+              error,
+            });
           }
         } else {
           res.send({
