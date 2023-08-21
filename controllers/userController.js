@@ -1,8 +1,6 @@
 const UserModel = require("../models/User.js");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-// import transporter from "../config/emailConfig.js";
-
 class UserController {
   static userRegistration = async (req, res) => {
     const { name, email, password, password_confirmation } = req.body;

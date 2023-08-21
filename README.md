@@ -1,4 +1,26 @@
 # Shipmnts-task
+
+## Steps:
+
+**1. Clone the repository using the following command:**
+ --> git clone https://github.com/Nilesh-chaudhary/Shipmnts-task.git
+
+**2. Install the required dependencies:**
+ --> npm install
+
+**3. Start the server:**
+ --> npm start
+
+**4. The server will be running on port 1337.**
+
+**5. Access the API using the following link:**
+[http://localhost:1337/](http://localhost:1337/)
+
+# deployment :
+**You can use Azure deployed link as given :** --> https://shipmnts-task.azurewebsites.net/
+**You can also use deployed link (https://shipmnts-task.azurewebsites.net/) instead of local link (http://localhost:1337/) in postman 
+![image](https://github.com/Nilesh-chaudhary/Shipmnts-task/assets/83772913/cad35271-cfe3-4bce-b4b2-f7eeec5cb95d)
+
 # user registered successuflly
 ![image](https://github.com/Nilesh-chaudhary/Shipmnts-task/assets/83772913/cbb2f33a-26e3-4658-bf4a-a5caffd1c7b1)
 
@@ -20,8 +42,11 @@
 # Votes
 ![image](https://github.com/Nilesh-chaudhary/Shipmnts-task/assets/83772913/ed9f82f5-10ae-40ea-a20d-fb6c4f639eb4)
 
-# comments 
+# search question working
+![image](https://github.com/Nilesh-chaudhary/Shipmnts-task/assets/83772913/76b6b06a-1209-4ac5-b2e5-ffed5f2c81e2)
 
+# sorting working fine : 
+![image](https://github.com/Nilesh-chaudhary/Shipmnts-task/assets/83772913/dec6b240-0c9a-4fde-b9db-63e9c6a31fa2)
 
 
 

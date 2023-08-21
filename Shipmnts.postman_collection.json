@@ -1,0 +1,736 @@
+{
+	"info": {
+		"_postman_id": "c93cf1e5-3734-4f56-a90d-36a0e03e3f86",
+		"name": "Shipmnts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Github commit error\",\r\n    \"body\": \"I am gettting errror while adding remote origin to my github account\",\r\n    \"tags\": [\r\n        \"git\",\r\n        \"github\"\r\n    ],\r\n    \"userId\": \"64e3113a1b8843efb27a0661\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1337/api/question/questions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"question",
+						"questions"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create user",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"shipmnts\",\r\n    \"email\":\"shipmntss@gmail.com\",\r\n    \"password\" : \"password\",\r\n    \"password_confirmation\" : \"password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1337/api/user/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"user",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "244"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f4-AdAxMXlhL70JE/dz4qwJnB+PXn0\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Aug 2023 07:39:07 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": \"success\",\n    \"message\": \"registration successfull\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySUQiOiI2NGUzMTQ5YjZmNzM3NTljZDU3YWE2MjgiLCJpYXQiOjE2OTI2MDM1NDcsImV4cCI6MTY5MzAzNTU0N30.6hXi4ngS5J9EbyGj2WAspmX6uBFo0ghDKRkrPn24hmQ\"\n}"
+				}
+			]
+		},
+		{
+			"name": "create question",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"server error in springboot\",\r\n    \"body\": \"This is body of new question now see what happens\",\r\n    \"tags\": [\r\n        \"git\",\r\n        \"github\",\r\n        \"new\",\r\n        \"question\"\r\n    ],\r\n    \"userId\": \"64e3113a1b8843efb27a0661\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1337/api/question/questions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"question",
+						"questions"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create question",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"A new question\",\r\n    \"body\": \"This is body of new question now see what happens\",\r\n    \"tags\": [\r\n        \"git\",\r\n        \"github\",\r\n        \"new\",\r\n        \"question\"\r\n    ],\r\n    \"userId\": \"64e3113a1b8843efb27a0661\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1337/api/question/questions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"question",
+								"questions"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "351"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"15f-4FuzOZ0a75IyrYkuK+J9ro41E/A\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Aug 2023 07:42:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Question created successfully\",\n    \"question\": {\n        \"title\": \"A new question\",\n        \"body\": \"This is body of new question now see what happens\",\n        \"tags\": [\n            \"git\",\n            \"github\",\n            \"new\",\n            \"question\"\n        ],\n        \"user\": \"64e3113a1b8843efb27a0661\",\n        \"comment_ids\": [],\n        \"_id\": \"64e31576cd7ca88c009ac8d2\",\n        \"createdAt\": \"2023-08-21T07:42:46.232Z\",\n        \"updatedAt\": \"2023-08-21T07:42:46.232Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "update question",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"an updated question\",\r\n    \"body\": \"an updated body\",\r\n    \"tags\": [\r\n        \"git\",\r\n        \"github\",\r\n        \"new\",\r\n        \"question\",\r\n        \"updated\"\r\n\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1337/api/question/questions/64e31576cd7ca88c009ac8d2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"question",
+						"questions",
+						"64e31576cd7ca88c009ac8d2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "update question",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"an updated question\",\r\n    \"body\": \"an updated body\",\r\n    \"tags\": [\r\n        \"git\",\r\n        \"github\",\r\n        \"new\",\r\n        \"question\",\r\n        \"updated\"\r\n\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1337/api/question/questions/64e31576cd7ca88c009ac8d2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"question",
+								"questions",
+								"64e31576cd7ca88c009ac8d2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "332"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"14c-4s51vzyvaPPc/Ehe4I/xwLKWjX4\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Aug 2023 07:46:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Question updated successfully\",\n    \"question\": {\n        \"_id\": \"64e31576cd7ca88c009ac8d2\",\n        \"title\": \"an updated question\",\n        \"body\": \"an updated body\",\n        \"tags\": [\n            \"git\",\n            \"github\",\n            \"new\",\n            \"question\",\n            \"updated\"\n        ],\n        \"user\": \"64e3113a1b8843efb27a0661\",\n        \"comment_ids\": [],\n        \"createdAt\": \"2023-08-21T07:42:46.232Z\",\n        \"updatedAt\": \"2023-08-21T07:46:02.949Z\",\n        \"__v\": 0\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete question",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1337/api/question/questions/64e31576cd7ca88c009ac8d2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"question",
+						"questions",
+						"64e31576cd7ca88c009ac8d2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete question",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1337/api/question/questions/64e31576cd7ca88c009ac8d2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"question",
+								"questions",
+								"64e31576cd7ca88c009ac8d2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "43"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2b-V4S/oeOV06QwBw91WaKNuoeoXXA\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Aug 2023 07:47:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Question deleted successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get all questions",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "get all questions",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1337/api/question/questions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"question",
+								"questions"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "753"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2f1-8j7nnaQ5xrvT2MpD8wUzDRYMUxk\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Aug 2023 07:49:32 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"questions\": [\n        {\n            \"_id\": \"64e3140d91faaca88261c317\",\n            \"title\": \"Github commit error\",\n            \"body\": \"I am gettting errror while adding remote origin to my github account\",\n            \"tags\": [\n                \"git\",\n                \"github\"\n            ],\n            \"user\": {\n                \"_id\": \"64e3113a1b8843efb27a0661\",\n                \"name\": \"cdc\",\n                \"email\": \"cdc@gmail.com\"\n            },\n            \"comment_ids\": [],\n            \"created_at\": \"2023-08-21T07:36:45.863Z\",\n            \"createdAt\": \"2023-08-21T07:36:45.864Z\",\n            \"updatedAt\": \"2023-08-21T07:36:45.864Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"64e3142a6f73759cd57aa622\",\n            \"title\": \"Github commit error\",\n            \"body\": \"I am gettting errror while adding remote origin to my github account\",\n            \"tags\": [\n                \"git\",\n                \"github\"\n            ],\n            \"user\": {\n                \"_id\": \"64e3113a1b8843efb27a0661\",\n                \"name\": \"cdc\",\n                \"email\": \"cdc@gmail.com\"\n            },\n            \"comment_ids\": [],\n            \"createdAt\": \"2023-08-21T07:37:14.228Z\",\n            \"updatedAt\": \"2023-08-21T07:37:14.228Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Vote question",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\" : \"64e3113a1b8843efb27a0661\",\r\n    \"voteType\" : \"upvote\",\r\n    \"question\" : \"64e3140d91faaca88261c317\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1337/api/vote/64e3140d91faaca88261c317/vote",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"vote",
+						"64e3140d91faaca88261c317",
+						"vote"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Vote question",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user\" : \"64e3113a1b8843efb27a0661\",\r\n    \"voteType\" : \"upvote\",\r\n    \"question\" : \"64e3140d91faaca88261c317\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:1337/api/vote/64e3140d91faaca88261c317/vote",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"vote",
+								"64e3140d91faaca88261c317",
+								"vote"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "119"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"77-1lN+XwSuB6SMYbFnvnhOgJ+fQMo\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Aug 2023 07:58:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": {\n        \"user\": \"64e3113a1b8843efb27a0661\",\n        \"voteType\": \"upvote\",\n        \"votecount\": 1,\n        \"question\": \"64e3140d91faaca88261c317\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Search question",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Search question",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1337/api/question/questions/search?keyword=commit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"question",
+								"questions",
+								"search"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "commit"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "663"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"297-3NU8mq6M0NXD7FJB8S8T3DW96n8\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Aug 2023 08:04:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"questions\": [\n        {\n            \"_id\": \"64e3140d91faaca88261c317\",\n            \"title\": \"Github commit error\",\n            \"body\": \"I am gettting errror while adding remote origin to my github account\",\n            \"tags\": [\n                \"git\",\n                \"github\"\n            ],\n            \"user\": \"64e3113a1b8843efb27a0661\",\n            \"comment_ids\": [],\n            \"created_at\": \"2023-08-21T07:36:45.863Z\",\n            \"createdAt\": \"2023-08-21T07:36:45.864Z\",\n            \"updatedAt\": \"2023-08-21T07:36:45.864Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"64e3142a6f73759cd57aa622\",\n            \"title\": \"Github commit error\",\n            \"body\": \"I am gettting errror while adding remote origin to my github account\",\n            \"tags\": [\n                \"git\",\n                \"github\"\n            ],\n            \"user\": \"64e3113a1b8843efb27a0661\",\n            \"comment_ids\": [],\n            \"createdAt\": \"2023-08-21T07:37:14.228Z\",\n            \"updatedAt\": \"2023-08-21T07:37:14.228Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "sorted list of question",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1337/api/question/questions/sort?sortBy=createdAt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"question",
+						"questions",
+						"sort"
+					],
+					"query": [
+						{
+							"key": "sortBy",
+							"value": "createdAt"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "sorted list of question",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:1337/api/question/questions/sort?sortBy=createdAt",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "1337",
+							"path": [
+								"api",
+								"question",
+								"questions",
+								"sort"
+							],
+							"query": [
+								{
+									"key": "sortBy",
+									"value": "createdAt"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "929"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"3a1-GBoxoHN9nbQFaKko/iOGtCk7Zx0\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 21 Aug 2023 14:42:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"questions\": [\n        {\n            \"_id\": \"64e377003ec6547d300d0412\",\n            \"title\": \"server error in springboot\",\n            \"body\": \"I got server error in java spring boot while surfing \",\n            \"tags\": [\n                \"git\",\n                \"github\",\n                \"new\",\n                \"question\"\n            ],\n            \"user\": \"64e3113a1b8843efb27a0661\",\n            \"comment_ids\": [],\n            \"createdAt\": \"2023-08-21T05:38:56.631Z\",\n            \"updatedAt\": \"2023-08-21T14:38:56.631Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"64e3142a6f73759cd57aa622\",\n            \"title\": \"Github commit error\",\n            \"body\": \"I am gettting errror while adding remote origin to my github account\",\n            \"tags\": [\n                \"git\",\n                \"github\"\n            ],\n            \"user\": \"64e3113a1b8843efb27a0661\",\n            \"comment_ids\": [],\n            \"createdAt\": \"2023-08-21T07:37:14.228Z\",\n            \"updatedAt\": \"2023-08-21T07:37:14.228Z\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"64e376853ec6547d300d040f\",\n            \"title\": \"A new question\",\n            \"body\": \"This is body of new question now see what happens\",\n            \"tags\": [\n                \"git\",\n                \"github\",\n                \"new\",\n                \"question\"\n            ],\n            \"user\": \"64e3113a1b8843efb27a0661\",\n            \"comment_ids\": [],\n            \"createdAt\": \"2023-08-21T14:36:53.771Z\",\n            \"updatedAt\": \"2023-08-21T14:36:53.771Z\",\n            \"__v\": 0\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}

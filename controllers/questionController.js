@@ -109,7 +109,7 @@ class questionController {
     try {
       const sortBy = req.query.sortBy; // Get the sorting criteria from the query string
 
-      const validSortFields = ["created_at", "title"]; // Define valid sorting fields
+      const validSortFields = ["createdAt", "title"]; // Define valid sorting fields
       if (!validSortFields.includes(sortBy)) {
         return res.status(400).json({ error: "Invalid sort criteria" });
       }
