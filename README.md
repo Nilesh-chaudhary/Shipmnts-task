@@ -14,6 +14,15 @@
 # question deletion successfull
 ![image](https://github.com/Nilesh-chaudhary/Shipmnts-task/assets/83772913/c53ef012-f580-4b04-8060-388e5218b80d)
 
+# get all question 
+![image](https://github.com/Nilesh-chaudhary/Shipmnts-task/assets/83772913/976d34bd-3ed3-4beb-aa0d-055196a4d5c5)
+
+# Votes
+![image](https://github.com/Nilesh-chaudhary/Shipmnts-task/assets/83772913/ed9f82f5-10ae-40ea-a20d-fb6c4f639eb4)
+
+# comments 
+
+
 
 
 
